@@ -1,70 +1,12 @@
-# Getting Started with Create React App
+This research focuses on the development and implementation of a Delay Prediction Component that integrates with modern software development pipelines, specifically those utilizing Agile methodologies and CI/CD workflows. The scope includes the design, training, and deployment of a predictive model capable of analyzing task performance and forecasting potential delays in real-time. The solution is engineered to be scalable and adaptable, supporting integration with widely used version control platforms and repository APIs, including GitHub, GitLab, and Bitbucket.
+The component utilizes a combination of technologies such as Python, Flask, JavaScript, and MongoDB, and incorporates machine learning techniques including Random Forest, Linear Regression, and Decision Trees. It is trained using real-world datasets (e.g., from Gagamuller Construction Company,Ireland - https://gagamuller.com/), which contain rich project-level task data. The model analyzes various features such as task priority, overdue days, and encoded categorical causes to predict delay probability and identify the factors contributing to such delays.
+The scope also extends to the implementation of role-based dashboards where supervisors, team leads, and individual members can monitor performance metrics, receive alerts, and access historical delay patterns. However, the research is limited to delay prediction and performance monitoring; it does not extend to automatic resolution or task rescheduling mechanisms.
+This study aims to provide a robust framework for enhancing transparency, accountability, and project foresight—thereby contributing significantly to the field of software engineering and project management analytics.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/user-attachments/assets/a19d6448-9f88-464d-8e67-a9aed83cdf70)
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The proposed Delay Prediction Component is designed as an intelligent subsystem integrated within a CI/CD-based software project management environment. Its primary function is to analyze the performance of development tasks in real-time and forecast potential delays using predictive analytics and machine learning models. The component operates alongside traditional Agile tools, enhancing visibility into task progression between start and end dates—a critical period where delays often originate.
+The system architecture is composed of several interconnected modules: data collection, preprocessing, model training, prediction service, and user interface (dashboard). These modules work collaboratively to ensure smooth data flow from source code repositories (e.g., GitHub, GitLab, Bitbucket) to the prediction engine and visualization layer.
+The data collection module retrieves historical and real-time project data such as task metadata, code commits, update frequency, delay history, and task assignment details. This data is then cleaned, engineered, and transformed into meaningful features (e.g., priority, delay days, cause of delay) for training machine learning models like Random Forest, Decision Trees, and Linear Regression.
+A trained model continuously monitors new task entries and developer activity to predict the likelihood of delay and provide probable causes. These predictions are exposed through a CI/CD-integrated dashboard that offers role-based access—enabling supervisors to monitor team performance and developers to view their individual progress. The system also includes a notification service to alert users when delay thresholds are met.
+Overall, the Delay Prediction Component bridges the gap between static task tracking and dynamic project forecasting. By transforming data into actionable insights, the system empowers software teams to intervene early, resolve blockers proactively, and ensure consistent delivery outcomes.
